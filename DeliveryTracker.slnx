@@ -1,1 +1,6 @@
-<Solution />
+<Solution>
+  <Project Path="DeliveryTracker.Api/DeliveryTracker.Api.csproj" />
+  <Project Path="DeliveryTracker.Application/DeliveryTracker.Application.csproj" />
+  <Project Path="DeliveryTracker.Domain/DeliveryTracker.Domain.csproj" />
+  <Project Path="DeliveryTracker.Infrastructure/DeliveryTracker.Infrastructure.csproj" />
+</Solution>

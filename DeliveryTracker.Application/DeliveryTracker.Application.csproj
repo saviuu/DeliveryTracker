@@ -10,4 +10,12 @@
     <ProjectReference Include="..\DeliveryTracker.Domain\DeliveryTracker.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Features\Deliveries\" />
+    <Folder Include="Features\Users\" />
+    <Folder Include="Features\Orders\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="DTOs\" />
+  </ItemGroup>
+
 </Project>
