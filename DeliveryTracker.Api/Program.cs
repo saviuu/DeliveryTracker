@@ -1,4 +1,6 @@
+using DeliveryTracker.Application.Interfaces.Services;
 using DeliveryTracker.Infrastructure.Persistence;
+using DeliveryTracker.Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,6 +17,8 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 
 builder.Services.AddDbContext<DeliveryTrackerDbContext>(options =>
     options.UseSqlServer(connectionString));
+
+builder.Services.AddScoped<IUserService, UserService>();
 
 var app = builder.Build();
 
