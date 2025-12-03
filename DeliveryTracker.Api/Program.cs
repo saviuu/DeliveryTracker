@@ -19,6 +19,7 @@ builder.Services.AddDbContext<DeliveryTrackerDbContext>(options =>
     options.UseSqlServer(connectionString));
 
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IRestaurantService, RestaurantService>();
 
 var app = builder.Build();
 
